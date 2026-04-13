@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_customer_cares",
+  "info": {
+    "displayName": "Customer Care",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "linkText": {
+      "type": "string"
+    },
+    "linkUrl": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_tab_sections",
+  "info": {
+    "displayName": "Tab Section",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "tabId": {
+      "type": "string"
+    },
+    "tabTitle": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mce_toppicks_tabs",
+  "info": {
+    "singularName": "mce-toppicks-tab",
+    "pluralName": "mce-toppicks-tabs",
+    "displayName": "MCE-Toppicks-Tab"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tabId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "cardData": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mce-toppicks-list.mce-toppicks-list"
+    }
+  }
+}

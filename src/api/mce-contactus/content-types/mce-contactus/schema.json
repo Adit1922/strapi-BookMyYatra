@@ -1,0 +1,47 @@
+{
+  "collectionName": "mce_contactuses",
+  "info": {
+    "singularName": "mce-contactus",
+    "pluralName": "mce-contactuses",
+    "displayName": "MCE Contact Us",
+    "description": "Contact page data"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Addresses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.address-details"
+    },
+    "otherSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.title-description"
+    },
+    "metaTags": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo",
+      "repeatable": true,
+      "required": true
+    },
+    "seoSchema": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

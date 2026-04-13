@@ -1,0 +1,78 @@
+{
+  "kind": "singleType",
+  "collectionName": "mce_footers",
+  "info": {
+    "singularName": "mce-footer",
+    "pluralName": "mce-footers",
+    "displayName": "MCE-Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "footerSection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.footer-links",
+      "repeatable": true
+    },
+    "appDownload": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.app-download",
+      "repeatable": false
+    },
+    "Copyright": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "footerLinks": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.footer-links",
+      "repeatable": true
+    },
+    "socialMedia": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.social-link",
+      "repeatable": true
+    },
+    "footerMedia": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.media",
+      "repeatable": true
+    }
+  }
+}

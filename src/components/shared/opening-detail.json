@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_opening_details",
+  "info": {
+    "displayName": "Opening Detail",
+    "icon": "briefcase",
+    "description": "Career opening details"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Openings": {
+      "type": "integer"
+    },
+    "Mail": {
+      "type": "email"
+    }
+  }
+}

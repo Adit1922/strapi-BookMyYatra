@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "mce_homepages",
+  "info": {
+    "singularName": "mce-homepage",
+    "pluralName": "mce-homepages",
+    "displayName": "MCE-Homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "metaTags": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo",
+      "repeatable": true
+    },
+    "seoSchema": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

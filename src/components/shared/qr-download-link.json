@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_qr_download_links",
+  "info": {
+    "displayName": "QR Download Link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "storeLink": {
+      "type": "string"
+    },
+    "storeImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "qrImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

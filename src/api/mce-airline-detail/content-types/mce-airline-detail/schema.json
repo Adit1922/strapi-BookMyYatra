@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mce_airline_details",
+  "info": {
+    "singularName": "mce-airline-detail",
+    "pluralName": "mce-airline-details",
+    "displayName": "MCE-Airline-Detail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "airlineName": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "airlineName",
+      "required": true
+    },
+    "iataCode": {
+      "type": "string"
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "tabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.tab-section"
+    },
+    "mce_airline_list": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mce-airline-list.mce-airline-list",
+      "inversedBy": "mce_airline_detail"
+    },
+    "metaTags": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": true,
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seoSchema": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

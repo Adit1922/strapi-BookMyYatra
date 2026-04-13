@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mce_static_contents",
+  "info": {
+    "singularName": "mce-static-content",
+    "pluralName": "mce-static-contents",
+    "displayName": "MCE-Static-Content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.title-description",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "metaTags": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo",
+      "repeatable": true
+    },
+    "seoSchema": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
+

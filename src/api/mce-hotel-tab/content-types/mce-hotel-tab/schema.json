@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mce_hotel_tabs",
+  "info": {
+    "singularName": "mce-hotel-tab",
+    "pluralName": "mce-hotel-tabs",
+    "displayName": "MCE-Hotel-Tab"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "tabId": {
+      "type": "string",
+      "required": true
+    },
+    "cardData": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mce-hotel-list.mce-hotel-list"
+    }
+  }
+}

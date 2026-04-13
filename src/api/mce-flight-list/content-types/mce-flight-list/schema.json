@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mce_flight_lists",
+  "info": {
+    "singularName": "mce-flight-list",
+    "pluralName": "mce-flight-lists",
+    "displayName": "MCE-Flight-List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fromCity": {
+      "type": "string"
+    },
+    "toCity": {
+      "type": "string"
+    },
+    "fromCode": {
+      "type": "string"
+    },
+    "toCode": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "badge": {
+      "type": "string"
+    },
+    "sortOrder": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "mce_flight_detail": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mce-flight-detail.mce-flight-detail",
+      "mappedBy": "mce_flight_list"
+    },
+    "metaTags": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": true,
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seoSchema": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

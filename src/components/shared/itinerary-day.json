@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_itinerary_days",
+  "info": {
+    "displayName": "Itinerary Day",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "dayLabel": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
+
+

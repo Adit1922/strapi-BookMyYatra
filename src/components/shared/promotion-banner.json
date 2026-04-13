@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_promotion_banners",
+  "info": {
+    "displayName": "Promotion Banner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Banner": {
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_newsletter_sections",
+  "info": {
+    "displayName": "Newsletter Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    }
+  }
+}

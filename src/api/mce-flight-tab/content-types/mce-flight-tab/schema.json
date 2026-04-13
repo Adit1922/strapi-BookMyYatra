@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mce_flight_tabs",
+  "info": {
+    "singularName": "mce-flight-tab",
+    "pluralName": "mce-flight-tabs",
+    "displayName": "MCE-Flight-Tab"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "tabId": {
+      "type": "string",
+      "required": true
+    },
+    "cardData": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mce-flight-list.mce-flight-list"
+    }
+  }
+}

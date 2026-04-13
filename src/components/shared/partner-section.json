@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_partner_sections",
+  "info": {
+    "displayName": "Partner Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Banner": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.perfect-block"
+    }
+  }
+}

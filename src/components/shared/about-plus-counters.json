@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_shared_about_plus_counters",
+  "info": {
+    "displayName": "About Plus Counters",
+    "description": "",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "Badge": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Counters": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.counter-item"
+    }
+  }
+}

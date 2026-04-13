@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mce_offer_details",
+  "info": {
+    "singularName": "mce-offer-detail",
+    "pluralName": "mce-offer-details",
+    "displayName": "MCE Offer Detail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mce_offer_list": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mce-offer-list.mce-offer-list",
+      "inversedBy": "mce_offer_detail"
+    },
+    "metaTags": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo",
+      "repeatable": true,
+      "required": true
+    },
+    "seoSchema": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

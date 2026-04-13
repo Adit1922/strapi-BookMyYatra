@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mce_offer_lists",
+  "info": {
+    "singularName": "mce-offer-list",
+    "pluralName": "mce-offer-lists",
+    "displayName": "MCE Offer List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string"
+    },
+    "promocode": {
+      "type": "string"
+    },
+    "openInNewTab": {
+      "type": "boolean"
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mce_offer_detail": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mce-offer-detail.mce-offer-detail",
+      "inversedBy": "mce_offer_list"
+    },
+    "metaTags": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo",
+      "repeatable": true,
+      "required": true
+    },
+    "seoSchema": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_address_details",
+  "info": {
+    "displayName": "Address Details",
+    "icon": "map-marker",
+    "description": "Address information with embedded map"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Address": {
+      "type": "text",
+      "required": true
+    },
+    "embeddedMapLink": {
+      "type": "text"
+    },
+    "contactInfo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.contact-info"
+    }
+  }
+}

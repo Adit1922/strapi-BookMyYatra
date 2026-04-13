@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_pinbox_items",
+  "info": {
+    "displayName": "Pinbox Item",
+    "description": "",
+    "icon": "pin"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Label": {
+      "type": "string",
+      "required": true
+    },
+    "Value": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}

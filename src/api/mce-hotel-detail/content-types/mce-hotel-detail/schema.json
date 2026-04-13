@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mce_hotel_details",
+  "info": {
+    "singularName": "mce-hotel-detail",
+    "pluralName": "mce-hotel-details",
+    "displayName": "MCE-Hotel-Detail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "mce_hotel_list": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mce-hotel-list.mce-hotel-list",
+      "inversedBy": "mce_hotel_detail"
+    },
+    "metaTags": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": true,
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seoSchema": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

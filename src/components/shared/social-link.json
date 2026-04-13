@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_shared_social_links",
+  "info": {
+    "displayName": "Social Link",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^https?:\\/\\/(www\\.)?[a-zA-Z0-9-]+\\.[a-zA-Z]{2,}([\\/\\w\\-.?=&%+]*)?$"
+    },
+    "OpenInNewTab": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    },
+    "Icon": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_counter_items",
+  "info": {
+    "displayName": "Counter Item",
+    "description": "",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "Value": {
+      "type": "string",
+      "required": true
+    },
+    "Label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

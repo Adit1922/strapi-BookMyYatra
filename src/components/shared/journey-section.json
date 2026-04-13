@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_journey_sections",
+  "info": {
+    "displayName": "Journey Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "AirlineLinks": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.image-link",
+      "repeatable": true
+    }
+  }
+}

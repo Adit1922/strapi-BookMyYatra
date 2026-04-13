@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_deal_hotel_slides",
+  "info": {
+    "displayName": "Hotel Slide"
+  },
+  "options": {},
+  "attributes": {
+    "hotelImage": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "multiple": false
+    },
+    "hotelName": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Book Now"
+    },
+    "ctaLink": {
+      "type": "string"
+    }
+  }
+}

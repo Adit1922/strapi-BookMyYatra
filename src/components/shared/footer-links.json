@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_footer_links",
+  "info": {
+    "displayName": "Footer Links"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Footer_Link": {
+      "type": "component",
+      "component": "shared.navigation",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_story_sections",
+  "info": {
+    "displayName": "Story Section",
+    "description": "",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "SubTitle": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "CategoryItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.category-item"
+    }
+  }
+}

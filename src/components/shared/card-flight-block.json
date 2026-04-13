@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_deal_card_flight_blocks",
+  "info": {
+    "displayName": "Card Flight Block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "topImage": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "multiple": false
+    },
+    "flightItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.flight-item"
+    }
+  }
+}

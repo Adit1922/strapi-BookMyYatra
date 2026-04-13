@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mce_hotel_lists",
+  "info": {
+    "singularName": "mce-hotel-list",
+    "pluralName": "mce-hotel-lists",
+    "displayName": "MCE-Hotel-List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "reviewScore": {
+      "type": "decimal"
+    },
+    "reviewCount": {
+      "type": "integer"
+    },
+    "url": {
+      "type": "string"
+    },
+    "mce_hotel_detail": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mce-hotel-detail.mce-hotel-detail",
+      "mappedBy": "mce_hotel_list"
+    },
+    "metaTags": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": true,
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seoSchema": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

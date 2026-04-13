@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mce_visa_lists",
+  "info": {
+    "singularName": "mce-visa-list",
+    "pluralName": "mce-visa-lists",
+    "displayName": "MCE-Visa-List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "visaCountry": {
+      "type": "string"
+    },
+    "visaType": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-box"
+    }
+  }
+}

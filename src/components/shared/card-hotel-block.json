@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_deal_card_hotel_blocks",
+  "info": {
+    "displayName": "Card Hotel Block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "topImage": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "multiple": false
+    },
+    "hotelSlides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.hotel-slide"
+    }
+  }
+}

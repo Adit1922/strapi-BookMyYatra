@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_perfect_blocks",
+  "info": {
+    "displayName": "Perfect Block",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

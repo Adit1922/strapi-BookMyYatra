@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mce_offer_tabs",
+  "info": {
+    "singularName": "mce-offer-tab",
+    "pluralName": "mce-offer-tabs",
+    "displayName": "MCE Offer Tab"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tabId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "cardData": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mce-offer-list.mce-offer-list"
+    }
+  }
+}

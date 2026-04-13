@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_text_boxes",
+  "info": {
+    "displayName": "TextBox"
+  },
+  "options": {},
+  "attributes": {
+    "Textbox": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

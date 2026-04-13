@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_title_descriptions",
+  "info": {
+    "displayName": "Title-Description",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    }
+  },
+  "config": {}
+}

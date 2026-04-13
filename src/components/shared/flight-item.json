@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_deal_flight_items",
+  "info": {
+    "displayName": "Flight Item"
+  },
+  "options": {},
+  "attributes": {
+    "airlineLogo": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "multiple": false
+    },
+    "from": {
+      "type": "string",
+      "required": true
+    },
+    "to": {
+      "type": "string",
+      "required": true
+    },
+    "travelDate": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

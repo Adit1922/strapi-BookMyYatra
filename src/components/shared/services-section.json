@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_services_sections",
+  "info": {
+    "displayName": "Services Section",
+    "description": "",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "SubTitle": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "ContactItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.pinbox-item"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "mce_headers",
+  "info": {
+    "singularName": "mce-header",
+    "pluralName": "mce-headers",
+    "displayName": "MCE-Header"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "topMenu": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.navigation",
+      "repeatable": true
+    },
+    "serviceMenu": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.navigation",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_famous_people",
+  "info": {
+    "displayName": "Famous Person",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}
+

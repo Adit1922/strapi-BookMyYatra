@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mce_popular_tabs",
+  "info": {
+    "singularName": "mce-popular-tab",
+    "pluralName": "mce-popular-tabs",
+    "displayName": "MCE-Popular-Tab"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tabId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "cardData": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mce-popular-list.mce-popular-list"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_travel_agency_infos",
+  "info": {
+    "displayName": "Travel Agency Info",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "details": {
+      "type": "richtext"
+    }
+  }
+}
