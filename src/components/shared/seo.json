@@ -8,19 +8,22 @@
   },
   "options": {},
   "attributes": {
-    "metaTitle": {
+    "tag": {
+      "type": "enumeration",
+      "required": true,
+      "default": "Meta",
+      "enum": [
+        "Meta",
+        "Link"
+      ]
+    },
+    "property": {
       "type": "string",
       "required": true
     },
-    "metaDescription": {
+    "content": {
       "type": "text",
       "required": true
-    },
-    "shareImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": ["images"]
     }
   }
 }
